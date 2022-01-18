@@ -1,0 +1,127 @@
+.hero__image--container {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin: 0.3rem;
+  z-index: 0;
+}
+
+.hero__image--container::before,
+.hero__image--container::after,
+.hero__image--container .pseudo,
+.hero__image {
+  content: "";
+  background-color: #4a6d8b;
+  grid-row: 1 / 2;
+}
+
+.hero__image--container::before {
+  grid-column: 1 / 2;
+  clip-path: polygon(0 0, 100% 0, 100% 67.4%);
+  transform: translateX(13.85%);
+  border-top-left-radius: 8px;
+}
+
+.hero__image--container .pseudo {
+  grid-column: 2 / 3;
+  height: 86%;
+  border-bottom-left-radius: 40.6%;
+  border-bottom-right-radius: 60%;
+  z-index: -1;
+}
+
+.hero__image--container::after {
+  grid-column: 2 / 4;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 24.5% 85.32%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 24.5% 85%); */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.hero__image {
+  background-image: url(../../../../img/blackboard.svg);
+  background-position: left 200% top 50%;
+  background-size: 90% 145%;
+  background-repeat: no-repeat;
+  grid-column: 1 / -1;
+  z-index: 1;
+  clip-path: polygon(3.2% 0.2%, 99.5% 0.2%, 99.5% 99.5%, 35% 83%, 24% 70%);
+}
+
+.light-side,
+.student-side,
+.window-side {
+  position: absolute;
+}
+
+.portrait {
+  grid-template-rows: 90%;
+}
+
+.landscape {
+  grid-template-rows: 100%;
+}
+
+/* 2475px */
+@media (max-width: 154.6875em) {
+  .hero__image {
+    background-size: 90% 130%;
+    background-position: left 180% top 70%;
+  }
+}
+
+/* 1000px */
+@media (max-width: 62.5em) {
+  .hero__image {
+    background-size: 93% 100%;
+    background-position: left 210% top 70%;
+  }
+}
+
+/*
+max-width: 1000px
+max-height: 770px
+min-height: 695px
+*/
+@media (max-width: 62.5em) and (max-height: 48.125em) and (min-height: 42.5em) {
+  .hero__image {
+    background-position: left 220% top 70%;
+  }
+}
+
+/* 750px (phones) */
+@media (max-width: 49.375em) {
+  .hero__image--container {
+    /* In phone devices always make it full height */
+    grid-template-columns: 10% 70% 20%;
+    grid-template-rows: 100% !important;
+    grid-column: 1 / -1;
+    margin-left: 0;
+  }
+
+  .hero__image--container::before {
+    /* background: red; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 70%); */
+    clip-path: polygon(0 0, 100% 0, 90% 57.7%, 50% 34%);
+    transform: translateX(13.85%);
+    /* z-index: 3; */
+  }
+
+  .pseudo {
+    border-bottom-left-radius: 33.6%;
+  }
+
+  .hero__image--container::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 85.2%);
+  }
+}
+
+/* 335px */
+@media (max-width: 20.9375em) {
+  .hero__image {
+    background-position: left -80% top 70%;
+    background-size: 105% 100%;
+    clip-path: polygon(3.2% 0.2%, 99.5% 0.2%, 99.5% 99.5%, 35% 83%, 14.6% 70%);
+  }
+}

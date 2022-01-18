@@ -1,0 +1,122 @@
+.slider {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slider__text {
+  color: rgb(105, 105, 105);
+}
+
+.slider__arrows {
+  display: block;
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.next .slider__arrows::before,
+.next .slider__arrows::after,
+.prev .slider__arrows::before,
+.prev .slider__arrows::after {
+  content: "";
+  background-color: #f47703;
+  width: 1.5rem;
+  height: 0.2rem;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgb(199, 198, 198);
+  cursor: pointer;
+}
+
+.next .slider__arrows::before,
+.next .slider__arrows::after {
+  right: 0;
+}
+
+.prev .slider__arrows::before,
+.prev .slider__arrows::after {
+  left: 0;
+}
+
+.next .slider__arrows::before,
+.prev .slider__arrows::before {
+  top: 0;
+}
+
+.next .slider__arrows::after,
+.prev .slider__arrows::after {
+  bottom: 0;
+}
+
+.prev .slider__arrows::before {
+  transform: rotate(-45deg) translateX(-1rem) translateY(1rem);
+}
+
+.prev .slider__arrows::after {
+  transform: rotate(45deg) translateX(-1rem) translateY(-1rem);
+}
+
+.next .slider__arrows::before {
+  transform: rotate(45deg) translateX(1rem) translateY(1rem);
+}
+
+.next .slider__arrows::after {
+  transform: rotate(-45deg) translateX(1rem) translateY(-1rem);
+}
+
+.prev,
+.prev .slider__arrows {
+  left: 0.1rem;
+}
+
+.next,
+.next .slider__arrows {
+  right: 0.1rem;
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  .slider__text {
+    font-size: 0.8rem;
+  }
+  .next .slider__arrows::before,
+  .next .slider__arrows::after,
+  .prev .slider__arrows::before,
+  .prev .slider__arrows::after {
+    width: 1rem;
+  }
+
+  .prev .slider__arrows::before {
+    transform: rotate(-45deg) translateX(-1.3rem) translateY(1rem);
+  }
+
+  .prev .slider__arrows::after {
+    transform: rotate(45deg) translateX(-1.3rem) translateY(-1rem);
+  }
+
+  .next .slider__arrows::before {
+    transform: rotate(45deg) translateX(1.3rem) translateY(1rem);
+  }
+
+  .next .slider__arrows::after {
+    transform: rotate(-45deg) translateX(1.3rem) translateY(-1rem);
+  }
+
+  .slider__arrows {
+    padding: 0.5rem;
+    padding-right: 0.8rem;
+  }
+}
+
+/* 350px */
+@media (max-width: 21.875em) {
+  .slider__text {
+    font-size: 0.7rem;
+  }
+}

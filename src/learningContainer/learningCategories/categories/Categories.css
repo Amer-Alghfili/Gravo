@@ -1,0 +1,71 @@
+.categories__list {
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  /* padding: 2rem 0 2rem 3.5rem; */
+  transition: transform 0.4s ease-in-out;
+}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background-color: transparent;
+  /* width: 3rem; */
+  /* width: 1.5rem; */
+  width: 3rem;
+  /* height: calc(100% - 4rem); */
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:focus,
+.slick-arrow.slick-next:focus {
+  background-color: rgba(114, 114, 114, 0.8);
+}
+
+.slick-arrow.slick-arrow.slick-prev::before,
+.slick-arrow.slick-arrow.slick-prev::after,
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-next::after {
+  content: "";
+  background-color: #f47703;
+  width: 1.5rem;
+  height: 0.2rem;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgb(199, 198, 198);
+  cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+  left: -3rem;
+  padding-right: 0.5rem;
+}
+
+.slick-arrow.slick-next {
+  right: -3rem;
+  padding-right: 2rem;
+}
+
+.slick-arrow.slick-arrow.slick-prev::before {
+  transform: rotate(-45deg) translateY(-0.7rem);
+}
+
+.slick-arrow.slick-arrow.slick-prev::after {
+  transform: rotate(45deg) translateY(0.7rem);
+}
+
+.slick-arrow.slick-next::before {
+  transform: rotate(-45deg) translateY(0.7rem);
+}
+
+.slick-arrow.slick-next::after {
+  transform: rotate(45deg) translateY(-0.7rem);
+}

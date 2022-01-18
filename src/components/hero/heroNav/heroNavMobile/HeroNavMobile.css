@@ -1,0 +1,109 @@
+@media (max-width: 28.125em) {
+  .main-nav__links {
+    perspective: 400px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    border-width: 0.1px;
+  }
+
+  .main-nav__link {
+    background-color: rgb(109, 185, 246, 0.7);
+    background-color: #b2cce5;
+    border-radius: 8px;
+    transform-origin: center;
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .main-nav__link:hover {
+    background-color: rgb(125, 192, 246);
+  }
+
+  .main-nav__link a {
+    color: rgb(39, 37, 37);
+    font-size: 1.1rem;
+  }
+
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(125, 192, 246, 0.3);
+    padding: 0.8rem;
+    align-self: flex-end;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .burger-icon:hover {
+    background-color: rgb(125, 192, 246, 0.5);
+  }
+
+  .burger-icon span {
+    background-color: rgb(233, 146, 15);
+    width: 20px;
+    height: 1px;
+    padding: 1px;
+    margin: 0.1rem 0;
+    border-radius: 8px;
+    transform-origin: center;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger-icon .burger-icon__second {
+    width: 15px;
+    align-self: flex-end;
+  }
+
+  /* After clicking the burger icon */
+  .main-nav__links.open .burger-icon__first {
+    transform: translateY(5.5px) rotate(50deg);
+  }
+
+  .main-nav__links.open .burger-icon__third {
+    transform: translateY(-5.5px) rotate(-50deg);
+  }
+
+  .main-nav__links.open .burger-icon__second {
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+
+  .main-nav__link a::before {
+    content: none;
+  }
+
+  .main-nav__link a:hover {
+    color: #000;
+  }
+}
+
+/* 335px */
+@media (max-width: 20.9375em) {
+  .main-nav__links {
+    padding-top: 1.5rem;
+  }
+
+  .main-nav__link {
+    width: 90%;
+  }
+
+  .burger-icon {
+    padding: 0.4rem;
+  }
+
+  .burger-icon span {
+    width: 16px;
+  }
+
+  .burger-icon .burger-icon__second {
+    width: 12px;
+  }
+}

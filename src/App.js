@@ -1,14 +1,17 @@
-import { Route } from "react-router-dom"
-import Header from './header/Header'
-import Hero from './hero/Hero'
+import Header from "./header/Header";
+import { Route } from "react-router-dom";
+import LearningContainer from "./learningContainer/LearningContainer";
+import LearningPage from "./learningPage/LearningPage";
+
 function App() {
   return (
-  <>
-    <Header />
-    <main>
-      <Route path="/" component={Hero} />
-    </main>
-  </>
-  )
+    <>
+      <Route path="/" exact component={Header} />
+      <main>
+        <Route path="/" exact component={LearningContainer} />
+        <Route path="/learn" exact component={LearningPage} />
+      </main>
+    </>
+  );
 }
 export default App;

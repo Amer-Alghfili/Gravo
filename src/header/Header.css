@@ -1,70 +1,28 @@
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 16px;
-    padding: 16px 0 16px 64px;
-    background: transparent;
+  height: 98vh;
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows: 4rem 1fr;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
 }
 
-.logo {
-    width: auto;
-    font-size: 4rem;
+.main-header.learn-header {
+  height: auto;
+  grid-template-rows: 7rem 1fr;
+  padding: 0;
 }
 
-.logo__link:hover #first-letter {
-    transform: rotate(0);
+/* 750px (phones) */
+@media (max-width: 49.375em) {
+  .main-header {
+    padding-left: 0;
+  }
 }
 
-.logo__link--container {
-    display: flex;
-}
-
-.logo__link #first-letter {
-    transform: rotate(30deg);
-    transition: all 0.2s ease-in;
-}
-
-.logo a {
-    color: rgb(233, 146, 15);
-}
-
-.main-nav {
-    min-width: 70%;
-    display: flex;
-}
-
-.main-nav__links {
-    display: flex;
-    padding: 0;
-}
-
-.main-nav__link {
-    margin: 0 32px;
-}
-
-.main-nav__link a {
-    position: relative;
-    color: rgb(228, 228, 228);
-    transition: all 0.2s ease-in;
-}
-
-.main-nav__link a::before {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 0.1rem;
-    border-radius: 8px;
-    transition: all 0.2s ease-in;
-}
-
-.main-nav__link a:hover {
-    color: rgb(194, 191, 191);
-}
-
-.main-nav__link a:hover::before {
-    background-color: rgb(245, 245, 245);
-    width: 80%;
+/* 450px */
+@media (max-width: 28.125em) {
+  .main-header.learn-header {
+    grid-template-rows: 5rem 1fr;
+  }
 }
