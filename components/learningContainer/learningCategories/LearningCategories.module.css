@@ -1,0 +1,10 @@
+.categoriesContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.listLabel {
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,33 @@
+.mainNav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.mainNav.mainNavLearn {
+  padding-left: 1rem;
+}
+
+/* 750px (phones) */
+@media (max-width: 49.375em) {
+  .mainNav {
+    padding: 0 3rem;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .mainNav {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* 335px */
+@media (max-width: 20.9375em) {
+  .mainNav {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+.topic__dialog {
+  color: rgb(47, 45, 45);
+  margin-bottom: 1rem;
+}
+
+.dialog__title {
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+}

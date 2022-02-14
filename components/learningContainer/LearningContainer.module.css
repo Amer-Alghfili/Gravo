@@ -1,0 +1,136 @@
+.learn {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.learn__titleContainer {
+  color: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(315deg, #f7b42c 0%, #fc575e 130%);
+  padding: 6rem 0;
+}
+
+.learn__intro {
+  width: 40%;
+}
+
+.learn__img {
+  width: 18rem;
+  flex-shrink: 0;
+}
+
+.learn__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.learn__title {
+  font-size: 2.7em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.learn__subtitle {
+  font-size: 1.4em;
+  font-weight: 450;
+  margin-bottom: 1.5rem;
+}
+
+.learn__searchContainer {
+  position: relative;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  padding-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+.learn__search {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  border-radius: 16px;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: font-size 0.3s ease-in;
+}
+
+.learn__search:focus {
+  font-size: 1.2em;
+  outline: none;
+}
+
+.learn__searchIcon.learn__searchIcon {
+  width: 1.3em;
+  height: 1.3em;
+  position: absolute;
+  bottom: 60%;
+  transform: translateY(55%);
+  left: 0;
+}
+
+/* 970px */
+@media (max-width: 60.625em) {
+  .learn__searchContainer {
+    width: 80%;
+  }
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  .learn {
+    font-size: 0.9rem;
+  }
+  .learn__searchContainer {
+    width: 95%;
+  }
+
+  .learn__titleContainer {
+    padding: 6rem 1.3rem;
+  }
+}
+
+/* 700px */
+@media (max-width: 43.75em) {
+  .learn__titleContainer {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .learn__intro {
+    width: 100%;
+  }
+}
+
+/* 550px */
+@media (max-width: 34.375em) {
+  .learn {
+    font-size: 0.8rem;
+  }
+
+  .learn__titleContainer {
+    gap: 3rem;
+  }
+
+  .learn__img {
+    width: 15rem;
+  }
+}
+
+/* 410px */
+@media (max-width: 25.625em) {
+  .learn {
+    font-size: 0.7rem;
+  }
+
+  .learn__img {
+    width: 13rem;
+  }
+}

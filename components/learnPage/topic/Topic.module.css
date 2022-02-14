@@ -1,0 +1,7 @@
+.topic__title {
+  color: rgb(226, 136, 0);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}

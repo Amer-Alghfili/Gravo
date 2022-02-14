@@ -1,0 +1,6 @@
+.contents__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem 1rem;
+}

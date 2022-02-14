@@ -1,0 +1,65 @@
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background-color: transparent !important;
+  width: 3rem !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  cursor: pointer !important;
+  border-radius: 2px !important;
+  transition: background-color 0.2s ease-in-out !important;
+  z-index: 1 !important;
+}
+
+.slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:focus,
+.slick-arrow.slick-next:focus {
+  background-color: rgba(114, 114, 114, 0.8) !important;
+}
+
+.slick-arrow.slick-arrow.slick-prev::before,
+.slick-arrow.slick-arrow.slick-prev::after,
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-next::after {
+  content: "" !important;
+  background-color: #f47703 !important;
+  width: 1.5rem !important;
+  position: absolute !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 4px rgb(199, 198, 198) !important;
+  cursor: pointer !important;
+  height: 0.2rem;
+}
+
+.slick-arrow.slick-prev {
+  left: -3rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.slick-arrow.slick-next {
+  right: -3rem !important;
+  padding-right: 2.5rem;
+  padding-left: 1rem;
+}
+
+.slick-arrow.slick-arrow.slick-prev::before {
+  transform: rotate(-45deg) translateY(-0.7rem) !important;
+}
+
+.slick-arrow.slick-arrow.slick-prev::after {
+  transform: rotate(45deg) translateY(0.7rem) !important;
+}
+
+.slick-arrow.slick-next::before {
+  transform: rotate(-45deg) translateY(0.7rem) !important;
+}
+
+.slick-arrow.slick-next::after {
+  transform: rotate(45deg) translateY(-0.7rem) !important;
+}

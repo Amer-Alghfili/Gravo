@@ -1,0 +1,37 @@
+.logo {
+  width: auto;
+  font-size: 4rem;
+}
+
+.logo__link:hover .firstLetter {
+  transform: rotate(0);
+}
+
+.logo__linkContainer {
+  display: flex;
+}
+
+.logo__link .firstLetter {
+  transform: rotate(30deg);
+  transition: all 0.2s ease-in;
+}
+
+.logo__link {
+  color: rgb(233, 146, 15);
+  cursor: pointer;
+}
+
+/* 750px (phones) */
+@media (max-width: 49.375em) {
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+/* 335px */
+@media (max-width: 20.9375em) {
+  .logo {
+    font-size: 2rem;
+    align-self: center;
+  }
+}

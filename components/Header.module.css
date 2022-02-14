@@ -1,0 +1,28 @@
+.mainHeader {
+  height: 98vh;
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  grid-template-rows: 4rem 1fr;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+
+.mainHeader.learn-header {
+  height: auto;
+  grid-template-rows: 7rem 1fr;
+  padding: 0;
+}
+
+/* 750px (phones) */
+@media (max-width: 49.375em) {
+  .mainHeader {
+    padding-left: 0;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .mainHeader.learn-header {
+    grid-template-rows: 5rem 1fr;
+  }
+}
