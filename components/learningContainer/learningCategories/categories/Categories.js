@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Categories({ categories }) {
-  console.log("categories: ", categories);
   const numberOfElementsBasedOnWidth = useNumberOfElements();
   const numberOfElements =
     numberOfElementsBasedOnWidth > categories.length

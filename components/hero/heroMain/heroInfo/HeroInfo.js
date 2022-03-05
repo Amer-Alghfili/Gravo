@@ -1,5 +1,3 @@
-// import "./HeroInfo.css";
-// import styles from "../../../../styles/globals.css";
 import styles from "../../../HeroInfo.module.css";
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
