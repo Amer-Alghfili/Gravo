@@ -40,13 +40,6 @@
   width: 100%;
 }
 
-.headline__item a:hover,
-.headline__item a:active,
-.headline__item a:focus,
-.selected a {
-  /* color: rgb(233, 146, 15); */
-}
-
 /* 600px */
 @media (max-width: 37.5em) {
   .headlines {
