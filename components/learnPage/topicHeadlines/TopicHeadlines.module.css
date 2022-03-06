@@ -50,7 +50,7 @@
 /* 500px */
 @media (max-width: 31.25em) {
   .headlines {
-    min-height: auto;
+    min-height: auto !important;
     border-radius: 8px;
   }
 }
